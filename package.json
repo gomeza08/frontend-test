@@ -1,0 +1,36 @@
+{
+  "name": "placester",
+  "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
+  "url": "http://backbonejs.org",
+  "keywords": [
+    "model",
+    "view",
+    "controller",
+    "router",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Jeremy Ashkenas <jeremy@documentcloud.org>",
+  "dependencies": {
+    "express": "~3.4.8",
+    "underscore": ">=1.7.0"
+  },
+  "main": "backbone.js",
+  "scripts": {
+    "build": "uglifyjs backbone.js --mangle --source-map backbone-min.map -o backbone-min.js",
+    "lint": "jsl -nofilelisting -nologo -conf docs/jsl.conf -process backbone.js"
+  },
+  "version": "1.1.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jashkenas/backbone.git"
+  },
+  "files": [
+    "backbone.js",
+    "backbone-min.js",
+    "backbone-min.map",
+    "LICENSE"
+  ]
+}
